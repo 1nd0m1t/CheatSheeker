@@ -18,6 +18,14 @@ function helpPanel(){
  echo -e "\th [+] Show this panel"
 }
 
+#Search Engine
+function searchCheatSheet(){
+ cheatSheet=$1 
+ if [ $cheatSheet == "reverse shell" ]; then
+  echo "\n\nHere you are!\n\n https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
+ fi
+}
+
 #Indicators
 declare -i parameter_counter=0
 
@@ -28,17 +36,10 @@ while getopts "c:h" arg; do
  esac
 done
 
-
+#Command logic
 if [ $parameter_counter -eq 1  ]; then
  searchCheatSheet # Here we use the function declared for search cheats sheets by given name
 else 
  helpPanel
 fi
 
-#Search Engine
-function searchCheatSheet(){
- cheatSheet=$1 
- if [ $cheatSheet == "reverse shell" ]; then
-  echo "\n\nHere you are!\n\n https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
- fi
-}
