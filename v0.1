@@ -21,8 +21,8 @@ function helpPanel(){
 #Search Engine
 function searchCheatSheet(){
  cheatSheet=$1 
- if [ "$cheatSheet" == "reverseshell" ]; then
-  echo "\n\nHere you are!\n\n https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
+ if [[ "$cheatSheet" == "reverseshell" ]]; then
+  echo -e "\n\nHere you are!\n\n https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
  fi
 }
 
@@ -31,14 +31,14 @@ declare -i parameter_counter=0
 
 while getopts "c:h" arg; do
  case $arg in
-  c) cheetSheat=$OPTARG;let parameter_counter+=1;;  
+  c) cheatSheet=$OPTARG;let parameter_counter+=1;;  
   h) ;;  
  esac
 done
 
 #Command logic
 if [ $parameter_counter -eq 1  ]; then
- searchCheatSheet # Here we use the function declared for search cheats sheets by given name
+ searchCheatSheet $cheatSheet # Here we use the function declared for search cheats sheets by given name
 else 
  helpPanel
 fi
