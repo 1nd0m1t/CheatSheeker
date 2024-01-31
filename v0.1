@@ -14,16 +14,16 @@ trap ctrl_c INT
 #Help Panel
 function helpPanel(){
  echo -e "\n[+] How to use:"
- echo -e "\tm [+] Search for Cheat Sheet"
+ echo -e "\tc [+] Search for Cheat Sheet"
  echo -e "\th [+] Show this panel"
 }
 
 #Indicators
 declare -i parameter_counter=0
 
-while getopts "m:h" arg; do
+while getopts "c:h" arg; do
  case $arg in
-  m) cheetSheet=$OPTARG;let parameter_counter+=1;;  
+  c) cheetSheet=$OPTARG;let parameter_counter+=1;;  
   h) ;;  
  esac
 done
