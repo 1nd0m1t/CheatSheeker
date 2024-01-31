@@ -1,0 +1,43 @@
+#!/bin/bash
+
+
+#Ctrl_C
+function ctrl_c(){
+ echo -e "\n\n[+] Exit..."
+ tput cnorm;exit 1
+}
+trap ctrl_c INT
+
+#Global Variables
+# -
+
+#Help Panel
+function helpPanel(){
+ echo -e "\n[+] How to use:"
+ echo -e "\tm [+] Search for Cheat Sheet"
+ echo -e "\th [+] Show this panel"
+}
+
+#Indicators
+declare -i parameter_counter=0
+
+while getopts "m:h" arg; do
+ case $arg in
+  m) cheetSheet=$OPTARG;let parameter_counter+=1;;  
+  h) ;;  
+ esac
+done
+
+
+if [ $parameter_counter -eq 1  ]; then
+ echo "searchCheatSheet" # Here we will use the function declared for search cheats sheets by given name
+else 
+ helpPanel
+fi
+
+#Search Engine
+function searchCheatSheet(){
+ cheatSheet=$1 
+ if [ $cheatSheet == "reverse shell" ]; then
+  echo "\n\nHere you are!\n\n https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
+}
