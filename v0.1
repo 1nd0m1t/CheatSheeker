@@ -23,14 +23,14 @@ declare -i parameter_counter=0
 
 while getopts "c:h" arg; do
  case $arg in
-  c) cheetSheet=$OPTARG;let parameter_counter+=1;;  
+  c) cheetSheat=$OPTARG;let parameter_counter+=1;;  
   h) ;;  
  esac
 done
 
 
 if [ $parameter_counter -eq 1  ]; then
- echo "searchCheatSheet" # Here we will use the function declared for search cheats sheets by given name
+ searchCheatSheet # Here we use the function declared for search cheats sheets by given name
 else 
  helpPanel
 fi
