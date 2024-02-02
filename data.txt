@@ -1,4 +1,4 @@
-reverseShell="https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
+reverseshell="https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
 ssh="https://pentestmonkey.net/cheat-sheet/ssh-cheat-sheet"
 johntheripper="https://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats"
 informixsqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/informix-sql-injection-cheat-s$
