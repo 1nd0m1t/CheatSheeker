@@ -25,7 +25,7 @@ function helpPanel(){
 #Search Engine
 function searchCheatSheet(){ 
  if [[ "$cheatSheet" == "reverse shell" ]]; then
-  echo -e "\n[+] $cheatSheet cheat sheet: $reverseshell"
+  echo -e "\n[+] $cheatSheet cheat sheet: $reverseshell \n"
  fi
 }
 
