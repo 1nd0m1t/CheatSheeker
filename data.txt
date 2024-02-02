@@ -1,3 +1,12 @@
+#reconnaissance, scanning, vulnerability assessment, exploitation, and reporting
+
+
+# enumeration
+nmap="https://www.stationx.net/nmap-cheat-sheet/"
+wfuzz="https://wfuzz.readthedocs.io/en/latest/user/basicusage.html"
+fuzz="https://www.phrack.me/tools/2022/07/06/Ffuf-cheatsheet.html"
+sublist3r="https://cheatsheet.haax.fr/open-source-intelligence-osint/technical-recon/subdomain_discovery/"
+
 # shells and injections
 reverseshell="https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
 ssh="https://pentestmonkey.net/cheat-sheet/ssh-cheat-sheet"
@@ -8,13 +17,6 @@ mysqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-in
 postgressqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-s$
 db2sqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/db2-sql-injection-cheat-sheet"
 ingressqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/ingres-sql-injection-cheat-sheet"
-
-# enumeration
-nmap="https://www.stationx.net/nmap-cheat-sheet/"
-wfuzz="https://wfuzz.readthedocs.io/en/latest/user/basicusage.html"
-fuzz="https://www.phrack.me/tools/2022/07/06/Ffuf-cheatsheet.html"
-sublist3r="https://cheatsheet.haax.fr/open-source-intelligence-osint/technical-recon/subdomain_discovery/"
-
 
 # tools 
 johntheripper="https://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats"
