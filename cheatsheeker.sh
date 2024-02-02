@@ -23,7 +23,7 @@ function helpPanel(){
 cheatSheet=$*
 function searchCheatSheet(){ 
  if [[ "$cheatSheet" == "reverse shell" ]]; then
-  echo -e "\n\nHere you are!: https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
+  echo -e "\nHere you are!: https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
  fi
 }
 
