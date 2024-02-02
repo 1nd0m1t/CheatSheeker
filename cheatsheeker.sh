@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 
 #Ctrl_C
@@ -8,38 +8,39 @@ function ctrl_c(){
 }
 trap ctrl_c INT
 
+
 #Global Variables
 # -
 
+
 #Help Panel
 function helpPanel(){
- echo -e "\n[+] How to use:"
- echo -e "\tc [+] Search for Cheat Sheet"
- echo -e "\th [+] Show this panel"
+ echo -e "[+] Help panel"
 }
 
+
 #Search Engine
-function searchCheatSheet(){
- cheatSheet=$* 
+cheatSheet=$*
+function searchCheatSheet(){ 
  if [[ "$cheatSheet" == "reverse shell" ]]; then
-  echo -e "\n\nHere you are!\n\nhttps://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
+  echo -e "\n\nHere you are!: https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
  fi
 }
+
 
 #Indicators
 declare -i parameter_counter=0
 
-while getopts "c:h" arg; do
+while getopts "h" arg; do
  case $arg in
-  c) cheatSheet=$OPTARG;let parameter_counter+=1;;  
-  h) ;;  
+  h) let parameter_counter+=1;
  esac
 done
 
+
 #Command logic
-if [ $parameter_counter -eq 1  ]; then
+if [ $parameter_counter -eq 0  ]; then
  searchCheatSheet $cheatSheet # Here we use the function declared for search cheats sheets by given name
-else 
+else
  helpPanel
 fi
-
