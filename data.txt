@@ -1,10 +1,10 @@
-reverse shell - https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
-ssh - https://pentestmonkey.net/cheat-sheet/ssh-cheat-sheet
-john the ripper - https://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats
-informix sql injection - https://pentestmonkey.net/cheat-sheet/sql-injection/informix-sql-injection-cheat-sheet
-mssql injection - https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet
-oracle sql injection - https://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet
-mysql injection - https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
-postgres sql injection - https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet
-db2 sql injection - https://pentestmonkey.net/cheat-sheet/sql-injection/db2-sql-injection-cheat-sheet
-ingres sql injection - https://pentestmonkey.net/cheat-sheet/sql-injection/ingres-sql-injection-cheat-sheet
+reverseShell="https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
+ssh="https://pentestmonkey.net/cheat-sheet/ssh-cheat-sheet"
+johntheripper="https://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats"
+informixsqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/informix-sql-injection-cheat-s$
+mssqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet"
+oraclesqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet"
+mysqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet"
+postgressqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-s$
+db2sqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/db2-sql-injection-cheat-sheet"
+ingressqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/ingres-sql-injection-cheat-sheet"
