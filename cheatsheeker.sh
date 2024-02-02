@@ -1,6 +1,10 @@
 #!/bin/bash
 
 
+#Database
+source data.txt
+
+
 #Ctrl_C
 function ctrl_c(){
  echo -e "\n\n[+] Exit..."
@@ -10,8 +14,7 @@ trap ctrl_c INT
 
 
 #Global Variables
-# -
-
+cheatSheet=$*
 
 #Help Panel
 function helpPanel(){
@@ -20,7 +23,6 @@ function helpPanel(){
 
 
 #Search Engine
-cheatSheet=$*
 function searchCheatSheet(){ 
  if [[ "$cheatSheet" == "reverse shell" ]]; then
   echo -e "\n[+] $cheatSheet cheat sheet: https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
