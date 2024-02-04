@@ -24,11 +24,28 @@ function helpPanel(){
 
 #Search Engine
 function searchCheatSheet(){ 
- if [[ "$cheatSheet" == "reverse shell" ]]; then
-  echo -e "\n[+] $cheatSheet cheat sheet: $reverseshell \n"
- else
-  echo -e "\n[!] No cheat sheet for $cheatSheet \n"
- fi
+case $cheatSheet in
+
+ # enumeration
+ "nmap")
+  echo -e "\n[+] $cheatSheet cheat sheet: $nmap \n";;
+ "wfuzz")
+  echo -e "\n[+] $cheatSheet cheat sheet: $wfuzz \n";;
+ "fuzz")
+  echo -e "\n[+] $cheatSheet cheat sheet: $fuzz \n";;
+ "sublist3r")
+  echo -e "\n[+] $cheatSheet cheat sheet: $sublist3r \n";;
+
+ # shells and sql injections
+ "reverse shell")
+  echo -e "\n[+] $cheatSheet cheat sheet: $reverseshell \n";;
+ "informix")
+  echo -e "\n[+] $cheatSheet cheat sheet: $informixsqlinjection \n";;
+
+ *)
+  echo -e "\n[!] No cheat sheet for '$cheatSheet' \n"
+ esac
+
 }
 
 
