@@ -10,11 +10,11 @@ sublist3r="https://cheatsheet.haax.fr/open-source-intelligence-osint/technical-r
 # shells and injections
 reverseshell="https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
 ssh="https://pentestmonkey.net/cheat-sheet/ssh-cheat-sheet"
-informixsqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/informix-sql-injection-cheat-s$"
+informixsqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/informix-sql-injection-cheat-sheet"
 mssqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet"
 oraclesqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet"
 mysqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet"
-postgressqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-s$
+postgressqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet"
 db2sqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/db2-sql-injection-cheat-sheet"
 ingressqlinjection="https://pentestmonkey.net/cheat-sheet/sql-injection/ingres-sql-injection-cheat-sheet"
 
