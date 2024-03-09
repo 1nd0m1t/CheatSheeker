@@ -1,9 +1,7 @@
 #!/bin/bash
 
-
 #Database
 source data.txt
-
 
 #Ctrl_C
 function ctrl_c(){
@@ -11,7 +9,6 @@ function ctrl_c(){
  tput cnorm;exit 1
 }
 trap ctrl_c INT
-
 
 #Global Variables
 cheatSheet=$*
@@ -21,11 +18,9 @@ function helpPanel(){
  echo -e "[+] Help panel"
 }
 
-
 #Search Engine
 function searchCheatSheet(){ 
 case $cheatSheet in
-
  # enumeration
  "nmap")
   echo -e "\n[+] $cheatSheet cheat sheet: $nmap \n";;
@@ -35,7 +30,6 @@ case $cheatSheet in
   echo -e "\n[+] $cheatSheet cheat sheet: $fuzz \n";;
  "sublist3r")
   echo -e "\n[+] $cheatSheet cheat sheet: $sublist3r \n";;
-
  # shells and sql injections
  "reverse shell")
   echo -e "\n[+] $cheatSheet cheat sheet: $reverseshell \n";;
@@ -45,9 +39,7 @@ case $cheatSheet in
  *)
   echo -e "\n[!] No cheat sheet for '$cheatSheet' \n"
  esac
-
 }
-
 
 #Indicators
 declare -i parameter_counter=0
@@ -58,10 +50,9 @@ while getopts "h" arg; do
  esac
 done
 
-
 #Command logic
 if [ $parameter_counter -eq 0  ]; then
- searchCheatSheet $cheatSheet # Here we use the function declared for search cheats sheets by given name
+ searchCheatSheet $cheatSheet
 else
  helpPanel
 fi
